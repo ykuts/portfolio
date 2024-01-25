@@ -15,3 +15,6 @@ Share a small video about your project on the Slack Channel.
 
 Send your HTML & CSS file, as well as a screenshot of your portfolio to your
 mentor for evaluation.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5fa26c94-5c45-4390-b3bd-52107826375f/deploy-status)](https://app.netlify.com/sites/ykportfolio/deploys)

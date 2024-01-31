@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="/index.html"><img class="nav__logo" src="img/YK.png" alt="logo"></a>
-            <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__link" href="#about">The page about me</a></li>
-                <li class="nav__li"><a class="nav__link" href="#projects">My projects</a></li>
-                <li class="nav__li"><a class="nav__link" href="#contacts">Contact me</a></li>            
+    <header>
+        <nav class="navbar">
+            <a href="/index.html"><img id="logo" src="img/YK.png" alt="logo"></a>
+            <ul>
+                <li><a href="#about">The page about me</a></li>
+                <li><a href="#projects">My projects</a></li>
+                <li><a href="#contacts">Contact me</a></li>            
             </ul>
         </nav>
     </header>
@@ -29,12 +29,11 @@
                     <h2>Hi, I'm Yuliia</h2>
                     <p>*Exactly, with a double "i"... but...</p>
                     <p>...You can call me Julie</p>
-                    <br> 
                     <h3>MY LIFE PHILOSOPHY</h3>
                     <p>Nothing is impossible in the world.</p> 
                 </div>
-                <div >
-                    <p><img class="my__photo" id="myPhoto" src="/img/myPhoto.jpg" alt="my photo"></p> 
+                <div class="my__photo">
+                    <p><img id="myPhoto" src="/img/myPhoto.jpg" alt="my photo"></p> 
                 </div> 
             </section>        
         </article>
@@ -44,8 +43,20 @@
             <h2>The page about me</h2>
 
             <section>
-                <h3>Hello2</h3>
-                <p id="aboutMe">I'm still thinking about what information to put here...</p>       
+                <h3>Nice to meet you -</h3>
+                <p>My name is Yuliia and this is my story...</p>
+                <p id="aboutMe"> 
+                    I am a young cheerful girl who finds joy in the simple pleasures of life. 
+                    My passion for traveling has taken me to amazing parts of the world where 
+                    I am immersed in different cultures and enjoy the beauty of diversity. 
+                    When I'm not exploring new places, I love to do handmade crafts. 
+                    There is something incredibly enjoyable about creating something
+                    with your own hands. Whether it's a piece of jewelry or an interior piece, 
+                    the process of creating brings me a sense of fulfillment and peace. 
+                    I believe that life is an adventure and I am always interested in discovering new places, 
+                    meeting interesting people and discovering the beauty of the unknown. 
+                    Join me on this journey where every day is an opportunity to explore, 
+                    create and enjoy the miracles of life.</p>       
             </section>
         </article>
 
@@ -56,26 +67,28 @@
             <p>
                 They're not alive yet... but wait a couple months... nobody knows... :)
             </p> 
-            <section>
+            <div class="content__project">
+            <section class="main__project">
                 <h3>Project 1</h3>
                 <p>Internet shop "Made by hands with love"</p>
                 <a href="/404.html">Internet shop</a>
             </section>
-            <section>
+            <section class="main__project">
                 <h3>Project 2</h3>
                 <p>Platform for Actors and Production agencies</p>
                 <a href="/404.html">Platform "CinemaGo"</a>
             </section>
-            <section>
+            <section class="main__project">
                 <h3>Project 3</h3>
                 <p>Project "Financial news"</p>
                 <a href="/404.html">Financial news</a>
             </section>
-            <section>
+            <section class="main__project">
                 <h3>Project 4</h3>
                 <p>Project "Budget travel"</p>
                 <a href="/404.html">Budget travel</a>
             </section>
+        </div>
             <hr>
         </article>
 
@@ -122,17 +135,12 @@
                         alt="Medium profile Yuliia Kuts">
                 </a>
                 <p>Or you can book a call</p>
-                <a href="https://calendly.com/yuliiakuts/available-for-a-meeting" target="_blank">Book a call </a>
-                <br>
                 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule time with me</a>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule a meeting with me</a>
 <!-- Calendly link widget end -->
-
                 <hr>
-                <br>
-                <br><br><br><br><br><br><br><br><br><br>
 
         </article>
     </main>

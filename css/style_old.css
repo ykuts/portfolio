@@ -1,66 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 22px;
 }
 
 body {
-    padding: 10%;
+    /* padding: 10%; */
     background-color: #f4f4f4;
     color: rgb(18, 1, 1);
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navbar {
     background-color: #f4f4f4;
     position: fixed;
     top: 0;
-    width: 80%;
+    width: 100%;
+}
+
+.nav__ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav__li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: rgb(18, 1, 1);
+}
+
+.nav__link:hover, .nav__link:focus {
+    text-decoration: underline;    
+}
+
+.nav__link:visited {
+    color: rgb(18, 1, 1);
 }
 
 .main__content {
+    margin-top: 110px;
     scroll-margin-top: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-#logo {
-    height: 100px;
+.nav__logo {
+    height: 150px;
+    margin-left: 20px;
 }
 
 .social {
     height: 40px;
 }
 
-img {
-    height: 300px;
-    
-    border-radius: 10px;
-}
-
 .my__photo {
-    margin: 10px;
-    padding: 10px 5px 10px 5px;
+    height: 300px;    
+    border-radius: 10px;    
 }
 
 #section_main {
     display: flex;
     justify-content: space-between; 
+    align-items: center;
+    
 }
 
 #aboutMe {
-    border: 1px rgb(56, 55, 55);
-    border-style: dashed none;
-    padding: 10px;
-    text-indent: 50px;
-    text-align: justify;
+    border: dotted 5px red;
 }
 
-li {
-    display: inline-block;
-    margin: 0 10px;
-}
 
 footer {
     display: flex;
@@ -70,27 +88,6 @@ footer {
     position: fixed; 
     bottom: 0;
     width: 80%;
-    height: 80px;
-}
-
-fieldset {
-    width: 50%;
-}
-
-.main__project {
-    width: 40%;
-    border-style: dashed;
-    border-radius: 10px;
-    margin: 15px;
-    padding: 15px;
-}
-
-.content__project {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
 }
 
 .construction {

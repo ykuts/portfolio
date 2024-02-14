@@ -10,14 +10,18 @@ body {
 
 html,body {
     font-family: 'Raleway', sans-serif;
+    
     font-size: 18px;
+    
+    /* background: #222;
+    color: #aaa */
   }
   
   h1,h2 {
-    font-weight: 500;
+    font-weight: 200;
     margin: 0.4em 0;
   }
-  h1 { font-size: 5em; }
+  h1 { font-size: 3.5em; }
   h2 {
     color: #888;
     font-size: 2em;
@@ -62,26 +66,13 @@ html,body {
     color: rgb(18, 1, 1);
 }
 
-.nav__logo {
-  height: 150px;
-  margin-left: 20px;
-}
-
-.main__article {
+.main__content {
     scroll-margin-top: 160px;
 }
 
-.main__header {
-  margin: 15px;
-  padding: 10px;
-  text-align: center;
-}
-
-.main__section {
-  display: flex;
-  justify-content: center;
-  height: 100vh; 
-  margin: 15px;
+.nav__logo {
+    height: 150px;
+    margin-left: 20px;
 }
 
 .social {
@@ -90,6 +81,7 @@ html,body {
 
 img {
     height: 300px;
+    
     border-radius: 10px;
 }
 
@@ -99,8 +91,19 @@ img {
 }
 
 
+.section__main {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh; ;
+}
 
-
+#aboutMe {
+    border: 1px rgb(56, 55, 55);
+    border-style: dashed none;
+    padding: 10px;
+    text-indent: 50px;
+    text-align: justify;
+}
 
 
 footer {
@@ -114,7 +117,25 @@ footer {
     height: 30vh;
 }
 
+fieldset {
+    width: 50%;
+}
 
+.main__project {
+    width: 40%;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.content__project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 
 .construction {
     height: 400px;
@@ -161,4 +182,40 @@ footer {
     left: 0;
   }
 
+  input#email {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
   
+    font-family: inherit;
+    font-size: 90%;
+  
+    box-sizing: border-box;
+  }
+  
+  /* This is our style for the invalid fields */
+  input.invalid {
+    border-color: #900;
+    background-color: #fdd;
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }

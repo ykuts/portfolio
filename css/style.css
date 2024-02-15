@@ -24,18 +24,21 @@ html,body {
   }
 
 .header {
-    display: flex;
-    /* position: fixed; */
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background-color: #f4f4f4;
 }
 
-.nav {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f4f4f4;
     
-    top: 0;
     
 }
 
@@ -67,9 +70,10 @@ html,body {
   margin-left: 20px;
 }
 
-.main__article {
-    scroll-margin-top: 160px;
+.main__content {
+  padding-top: 150px;
 }
+
 
 .main__header {
   margin: 15px;
@@ -77,11 +81,33 @@ html,body {
   text-align: center;
 }
 
-.main__section {
+.main__article {
   display: flex;
   justify-content: center;
   height: 100vh; 
   margin: 15px;
+}
+
+.section {
+
+  scroll-margin-top: 160px;
+}
+
+.section__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  
+}
+
+.text__about {
+  font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+    margin-bottom: 50px;
+    padding-right: 25px;
 }
 
 .social {
@@ -150,7 +176,7 @@ footer {
   .back-to-top-icon {
     width: 1rem;
     height: 1rem;
-    color: #7ac9f9;
+    color: #d9ecf8;
   }
 
   .progress-bar {

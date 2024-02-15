@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Yuliia K">
@@ -9,189 +10,207 @@
     <link rel="icon" href="/img/YK.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/style_slider.css" type="text/css">
-    <link rel="stylesheet" href="/css/css-reset.css" type="text/css">
+    <!-- <link rel="stylesheet" href="/css/css-reset.css" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <!-- link CSS slider -->
-    
+
     <!-- link JS slider -->
     <script defer src="script/script.js"></script>
     <script defer src="script/typing.js"></script>
     <script defer src="script/backtotop.js"></script>
     <script defer src="script/form-validation.js"></script>
-    
-    
+
+
 </head>
+
 <body>
-    
-    <header class="header">
-        <a href="/index.html"><img class="nav__logo" src="img/YK.png" alt="logo"></a>
-        <div class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__link" href="#about">The page about me</a></li>
-                <li class="nav__li"><a class="nav__link" href="#projects">My projects</a></li>
-                <li class="nav__li"><a class="nav__link" href="#contacts">Contact me</a></li>            
-            </ul>
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <a href="/index.html"><img class="nav__logo" src="img/YK.png" alt="logo"></a>
+            </div>
+            <div class="header__nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__link" href="#about">The page about me</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#projects">My projects</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#contacts">Contact me</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <main class="main__content">
-        <h1 class="main__header">Welcome!</h1>
-        <article class="main__article" id="main">
-            <section class="main__section">
-                <h2>
-                    <span id="helloWorld" class="txt__hello">
-                    </span>
-                </h2>
-            </section>        
-        </article>
+    <main id="main">
+        <div class="main__content">
 
-        <hr>
-        <article class="main__article" id="about">
-            <h2>The page about me</h2>
-
-            <section>
-                <h3>Nice to meet you -</h3>
-                <p>My name is Yuliia and this is my story...</p>
-                <p id="aboutMe"> 
-                    I am a young cheerful girl who finds joy in the simple pleasures of life. 
-                    My passion for traveling has taken me to amazing parts of the world where 
-                    I am immersed in different cultures and enjoy the beauty of diversity. 
-                    When I'm not exploring new places, I love to do handmade crafts. 
-                    There is something incredibly enjoyable about creating something
-                    with your own hands. Whether it's a piece of jewelry or an interior piece, 
-                    the process of creating brings me a sense of fulfillment and peace. 
-                    I believe that life is an adventure and I am always interested in discovering new places, 
-                    meeting interesting people and discovering the beauty of the unknown. 
-                    Join me on this journey where every day is an opportunity to explore, 
-                    create and enjoy the miracles of life.</p>       
+            <section class="main__section section">
+                <div>
+                    <h1 class="main__header">Welcome!</h1>
+                    <article class="main__article" id="main">
+                        <h2>
+                            <span id="helloWorld" class="txt__hello">
+                            </span>
+                        </h2>
+                    </article>
+                </div>
             </section>
-        </article>
-
             <hr>
-        <article class="main__article" id="projects">  
-            <h2>Here are my projects:</h2>
-            <p>here are my future projects</p> 
-            <p>
-                They're not alive yet... but wait a couple months... nobody knows... :)
-            </p>
-            <h1 class="page-title">Slider example</h1>
-            <div class="slider-container">
-            <div class="slider">
-              <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Белый пушистый кот">
-              <img src="https://i.postimg.cc/cLVh9nKk/2.png" alt="Рыжий пушистый кот в джинсах">
-              <img src="https://i.postimg.cc/4NxWmZkP/3.png" alt="Бело-рыжий пушистый кот">
-              <img src="https://i.postimg.cc/FFZPrzq1/8.png" alt="Золотистый пушистый кот">
-              <img src="https://i.postimg.cc/jd3Zf9Rb/7.png" alt="Золотистый пушистый кот">
-            </div>
-            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-          </div>
-            <div class="content__project">
-            <section class="main__project">
-                <h3>Project 1</h3>
-                <p>Internet shop "Made by hands with love"</p>
-                <a href="/404.html">Internet shop</a>
-            </section>
-            <section class="main__project">
-                <h3>Project 2</h3>
-                <p>Platform for Actors and Production agencies</p>
-                <a href="/404.html">Platform "CinemaGo"</a>
-            </section>
-            <section class="main__project">
-                <h3>Project 3</h3>
-                <p>Project "Financial news"</p>
-                <a href="/404.html">Financial news</a>
-            </section>
-            <section class="main__project">
-                <h3>Project 4</h3>
-                <p>Project "Budget travel"</p>
-                <a href="/404.html">Budget travel</a>
-            </section>
-        </div>
-            <hr>
-        </article>
-
+            <section class="section__about section" id="about">
+                <div>
+                    <h2>The page about me</h2>
+                    <h3>Nice to meet you -</h3>
+                    <p>My name is Yuliia and this is my story...</p>
+                    <div class="text__about">
+                        <p>I am a young cheerful girl who finds joy in the simple pleasures of life.</p>
+                        <p>My passion for traveling has taken me to amazing parts of the world where
+                            I am immersed in different cultures and enjoy the beauty of diversity.</p>
+                        <p>When I'm not exploring new places, I love to do handmade crafts.
+                            There is something incredibly enjoyable about creating something
+                            with your own hands. Whether it's a piece of jewelry or an interior piece,
+                            the process of creating brings me a sense of fulfillment and peace.</p>
+                        <p>I believe that life is an adventure and I am always interested in discovering new places,
+                            meeting interesting people and discovering the beauty of the unknown.</p>
+                        <p>Join me on this journey where every day is an opportunity to explore,
+                            create and enjoy the miracles of life.</p>
+                        </p>
+                    </div>
+                    <div>
+                        <button class="button__about">More official info (download my CV)</button>
+                        <button class="button__about">More interesting info</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/yuliia.jpg" alt="my picture" class="img__about">
+                </div>
             
-        <article class="main__article" id="contacts">
-            <h2>Contact me form</h2>
-            <h3>Glad to see you on this page</h3>
-            <p>Hope it means you would like to contact me :)</p>
-            <p>You can leave me a message in the form</p>
-            <form name="MsgForm" id="msgForm" novalidate>
-                <fieldset>
-                    <p>
-                        <label for="fullname">First Name:</label>
-                        <input type="text" name="name" id="fullname" 
-                        placeholder="Enter your name">
-                        <span id="nameError" class="error-message"></span>
-                    </p>
-                    <p>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" 
-                        id="email" placeholder="mail@mail.com">
-                        <span id="emailError" class="error-message"></span>
-                    </p>
-                    <p>
-                        <label for="message">Your Message:</label>
+            </section>
+
+            <hr>
+            <section class="section__projects section" id="projects">
+
+                <h2>Here are my projects:</h2>
+                <p>here are my future projects</p>
+                <p>
+                    They're not alive yet... but wait a couple months... nobody knows... :)
+                </p>
+                <h1 class="page-title">Slider example</h1>
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Белый пушистый кот">
+                        <img src="https://i.postimg.cc/cLVh9nKk/2.png" alt="Рыжий пушистый кот в джинсах">
+                        <img src="https://i.postimg.cc/4NxWmZkP/3.png" alt="Бело-рыжий пушистый кот">
+                        <img src="https://i.postimg.cc/FFZPrzq1/8.png" alt="Золотистый пушистый кот">
+                        <img src="https://i.postimg.cc/jd3Zf9Rb/7.png" alt="Золотистый пушистый кот">
+                    </div>
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+                </div>
+                <div class="content__project">
+                    <section class="main__project">
+                        <h3>Project 1</h3>
+                        <p>Internet shop "Made by hands with love"</p>
+                        <a href="/404.html">Internet shop</a>
+                    </section>
+                    <section class="main__project">
+                        <h3>Project 2</h3>
+                        <p>Platform for Actors and Production agencies</p>
+                        <a href="/404.html">Platform "CinemaGo"</a>
+                    </section>
+                    <section class="main__project">
+                        <h3>Project 3</h3>
+                        <p>Project "Financial news"</p>
+                        <a href="/404.html">Financial news</a>
+                    </section>
+                    <section class="main__project">
+                        <h3>Project 4</h3>
+                        <p>Project "Budget travel"</p>
+                        <a href="/404.html">Budget travel</a>
+                    </section>
+                </div>
+                <hr>
+
+            </section>
+
+            <section class="section__contacts section" id="contacts">
+
+                <h2>Contact me form</h2>
+                <h3>Glad to see you on this page</h3>
+                <p>Hope it means you would like to contact me :)</p>
+                <p>You can leave me a message in the form</p>
+                <form name="MsgForm" id="msgForm" novalidate>
+                    <fieldset>
+                        <p>
+                            <label for="fullname">First Name:</label>
+                            <input type="text" name="name" id="fullname" placeholder="Enter your name">
+                            <span id="nameError" class="error-message"></span>
+                        </p>
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="mail@mail.com">
+                            <span id="emailError" class="error-message"></span>
+                        </p>
+                        <p>
+                            <label for="message">Your Message:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="Type your message here"></textarea>
+                        </p>
                         <br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
-                    </p>
-                    <br>
-                    <input type="submit" value="Send" name="Submit" />
-                    <input type="reset" value="Reset" name="Reset" />
-                </fieldset>
-            </form>
-                
-                
+                        <input type="submit" value="Send" name="Submit" />
+                        <input type="reset" value="Reset" name="Reset" />
+                    </fieldset>
+                </form>
 
-        </article>
 
-        
+
+            </section>
+
+
+
+
+        </div>
     </main>
 
     <footer class="footer">
         <section>
             <p>You can find me in Social media</p>
-                <a href="https://github.com/ykuts" target="_blank">
-                    <img class="social" 
-                        src="/img/github.png" 
-                        alt="GitHub profile Yuliia Kuts">
-                </a>
-                <a href="https://linkedin.com/in/yuliiakuts" target="_blank">
-                    <img class="social" 
-                        src="/img/linkedin.png" 
-                        alt="LinkedIn profile Yuliia Kuts">
-                </a>
-                <a href="https://medium.com/@yuliiakuts" target="_blank">
-                    <img class="social" 
-                        src="/img/medium.png" 
-                        alt="Medium profile Yuliia Kuts">
-                </a>
+            <a href="https://github.com/ykuts" target="_blank">
+                <img class="social" src="/img/github.png" alt="GitHub profile Yuliia Kuts">
+            </a>
+            <a href="https://linkedin.com/in/yuliiakuts" target="_blank">
+                <img class="social" src="/img/linkedin.png" alt="LinkedIn profile Yuliia Kuts">
+            </a>
+            <a href="https://medium.com/@yuliiakuts" target="_blank">
+                <img class="social" src="/img/medium.png" alt="Medium profile Yuliia Kuts">
+            </a>
         </section>
         <section>
             <p>Or you can book a call</p>
-                <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule a meeting with me</a>
-<!-- Calendly link widget end -->
-                <hr>
+            <!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule
+                a meeting with me</a>
+            <!-- Calendly link widget end -->
+            <hr>
         </section>
         <section>
             &copy; Yuliia K
         </section>
-        
-        
+
+
     </footer>
 
-    <div class="progress-bar" >
-<button class="back-to-top hidden">
-  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-  </svg>
-</button>
-</div>
+    <div class="progress-bar">
+        <button class="back-to-top hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+            </svg>
+        </button>
+    </div>
 </body>
+
 </html>
 
 <!-- <a href="https://iconscout.com/icons/github" class="text-underline font-size-sm" target="_blank">Github</a> by <a href="https://iconscout.com/contributors/iconizer" class="text-underline font-size-sm" target="_blank">IconizerApp</a>

@@ -110,6 +110,22 @@ html,body {
     padding-right: 25px;
 }
 
+.section__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.form__form{
+  width: 600px;
+}
+
+.form__fieldset {
+  border-radius: 10px;
+    border-width: 1px;
+}
+
 .social {
     height: 40px;
 }

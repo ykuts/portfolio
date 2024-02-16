@@ -9,6 +9,7 @@
     <title>YK Portfolio</title>
     <link rel="icon" href="/img/YK.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/style-glass-btn.css" type="text/css">
     <link rel="stylesheet" href="/css/style_slider.css" type="text/css">
     <!-- <link rel="stylesheet" href="/css/css-reset.css" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
@@ -74,8 +75,12 @@
                         </p>
                     </div>
                     <div>
-                        <button class="button__about">More official info (download my CV)</button>
-                        <button class="button__about">More interesting info</button>
+                        <div class="glass-btn glass-btn-red">
+                        <a href="#" class="button__about">More official info (download my CV)</a>
+                        </div>
+                        <div class="glass-btn glass-btn-blue">
+                        <a href="#" class="button__about">More interesting info</a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -86,12 +91,14 @@
 
             <hr>
             <section class="section__projects section" id="projects">
-
+                <div>
                 <h2>Here are my projects:</h2>
                 <p>here are my future projects</p>
                 <p>
                     They're not alive yet... but wait a couple months... nobody knows... :)
                 </p>
+            </div>
+            <div>
                 <h1 class="page-title">Slider example</h1>
                 <div class="slider-container">
                     <div class="slider">
@@ -104,7 +111,8 @@
                     <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
                     <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
                 </div>
-                <div class="content__project">
+            </div>
+                <!-- <div class="content__project">
                     <section class="main__project">
                         <h3>Project 1</h3>
                         <p>Internet shop "Made by hands with love"</p>
@@ -125,32 +133,43 @@
                         <p>Project "Budget travel"</p>
                         <a href="/404.html">Budget travel</a>
                     </section>
-                </div>
+                </div> -->
                 <hr>
 
             </section>
 
             <section class="section__contacts section" id="contacts">
-
-                <h2>Contact me form</h2>
-                <h3>Glad to see you on this page</h3>
-                <p>Hope it means you would like to contact me :)</p>
-                <p>You can leave me a message in the form</p>
+                <div>
+                    <h2>Contact me form</h2>
+                    <h3>Glad to see you on this page</h3>
+                    <p>Hope it means you would like to contact me :)</p>
+                </div>
+                <div class="section__form">
+                <div class="title__form">
+                    <p>Great, let's...</p>
+                    <p>...talk, take coffe, collaborate, create, innovate, keep in touch, paint this World</p>
+                </div>
+                <div class="form__form">
                 <form name="MsgForm" id="msgForm" novalidate>
-                    <fieldset>
+                    <fieldset class="form__fieldset">
                         <p>
                             <label for="fullname">First Name:</label>
+                            </p>
+                            <p>
                             <input type="text" name="name" id="fullname" placeholder="Enter your name">
                             <span id="nameError" class="error-message"></span>
                         </p>
                         <p>
                             <label for="email">E-mail:</label>
+                        </p>
+                        <p>
                             <input type="email" name="email" id="email" placeholder="mail@mail.com">
                             <span id="emailError" class="error-message"></span>
                         </p>
                         <p>
                             <label for="message">Your Message:</label>
-                            <br>
+                        </p>
+                        <p>
                             <textarea name="message" id="message" cols="30" rows="10"
                                 placeholder="Type your message here"></textarea>
                         </p>
@@ -159,6 +178,8 @@
                         <input type="reset" value="Reset" name="Reset" />
                     </fieldset>
                 </form>
+            </div>
+            </div>
 
 
 

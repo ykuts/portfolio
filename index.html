@@ -10,16 +10,17 @@
     <link rel="icon" href="/img/YK.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/style-glass-btn.css" type="text/css">
-    <link rel="stylesheet" href="/css/style_slider.css" type="text/css">
+    <link rel="stylesheet" href="/css/style-slider2.css" type="text/css">
     <!-- <link rel="stylesheet" href="/css/css-reset.css" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <!-- link CSS slider -->
 
     <!-- link JS slider -->
-    <script defer src="script/script.js"></script>
+    <script defer src="script/slider.js"></script>
     <script defer src="script/typing.js"></script>
     <script defer src="script/backtotop.js"></script>
     <script defer src="script/form-validation.js"></script>
+
 
 
 </head>
@@ -57,50 +58,84 @@
             <hr>
             <section class="section__about section" id="about">
                 <div>
-                    <h2>The page about me</h2>
-                    <h3>Nice to meet you -</h3>
-                    <p>My name is Yuliia and this is my story...</p>
-                    <div class="text__about">
-                        <p>I am a young cheerful girl who finds joy in the simple pleasures of life.</p>
-                        <p>My passion for traveling has taken me to amazing parts of the world where
-                            I am immersed in different cultures and enjoy the beauty of diversity.</p>
-                        <p>When I'm not exploring new places, I love to do handmade crafts.
-                            There is something incredibly enjoyable about creating something
-                            with your own hands. Whether it's a piece of jewelry or an interior piece,
-                            the process of creating brings me a sense of fulfillment and peace.</p>
-                        <p>I believe that life is an adventure and I am always interested in discovering new places,
-                            meeting interesting people and discovering the beauty of the unknown.</p>
-                        <p>Join me on this journey where every day is an opportunity to explore,
-                            create and enjoy the miracles of life.</p>
-                        </p>
+                    <div>
+                        <h2>About me</h2>
+                        <h3>Nice to meet you -</h3>
+                        <p>My name is Yuliia...</p>
+                        <div class="text__about">
+                            <p>Welcome to my corner of the digital universe!</p>
+                            <p>My passion is writing code and making dreams come true.</p>
+                            <p>With a deep love for creating elegant solutions, I am excited to take on the challenge of 
+                                turning your ideas into functional and beautiful applications. Whether it's composing complex algorithms or 
+                                designing intuitive user interfaces, I'm dedicated to bringing your ideas to life.</p>
+                            <p>Join me on this journey of innovation and creativity as we 
+                                navigate the ever-changing landscape of technology together.</p>
+                            </p>                       
+                                
+                        </div>
                     </div>
                     <div>
-                        <div class="glass-btn glass-btn-red">
-                        <a href="#" class="button__about">More official info (download my CV)</a>
-                        </div>
-                        <div class="glass-btn glass-btn-blue">
-                        <a href="#" class="button__about">More interesting info</a>
-                        </div>
+                            <div class="glass-btn glass-btn-red">
+                                <a href="#" class="button__about">More official info (download my CV)</a>
+                            </div>
+                            <div class="glass-btn glass-btn-blue">
+                                <a href="./more-about.html" class="button__about">More interesting info</a>
+                            </div>
+                            <div class="glass-btn glass-btn-green">
+                                <a href="#projects" class="button__about">See my projects below </a>
+                            </div>
                     </div>
                 </div>
                 <div>
                     <img src="./img/yuliia.jpg" alt="my picture" class="img__about">
                 </div>
-            
+
             </section>
 
             <hr>
             <section class="section__projects section" id="projects">
                 <div>
-                <h2>Here are my projects:</h2>
-                <p>here are my future projects</p>
-                <p>
-                    They're not alive yet... but wait a couple months... nobody knows... :)
-                </p>
-            </div>
-            <div>
+                    <div>
+                        <h2>Here are my projects:</h2>
+                        <p>here are my future projects</p>
+                        <p>
+                            They're not alive yet... but wait a couple months... nobody knows... :)
+                        </p>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-list">
+                        <div class="slider-track">
+                            <div class="slide">
+                                <h3>Project 1</h3>
+                                <p>Internet shop "Made by hands with love"</p>
+                                <a href="/404.html">Internet shop</a>
+                            </div>
+                            <div class="slide">
+                                <h3>Project 2</h3>
+                                <p>Platform for Actors and Production agencies</p>
+                                <a href="/404.html">Platform "CinemaGo"</a>
+                            </div>
+                            <div class="slide">
+                                <h3>Project 3</h3>
+                                <p>Project "Financial news"</p>
+                                <a href="/404.html">Financial news</a>
+                            </div>
+                            <div class="slide">
+                                <h3>Project 4</h3>
+                                <p>Project "Budget travel"</p>
+                                <a href="/404.html">Budget travel</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="slider-arrows">
+                        <button type="button" class="prev">&larr;</button>
+                        <button type="button" class="next">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+           <!-- <div>
                 <h1 class="page-title">Slider example</h1>
-                <div class="slider-container">
+                 <div class="slider-container">
                     <div class="slider">
                         <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Белый пушистый кот">
                         <img src="https://i.postimg.cc/cLVh9nKk/2.png" alt="Рыжий пушистый кот в джинсах">
@@ -110,8 +145,8 @@
                     </div>
                     <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
                     <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-                </div>
-            </div>
+                </div> 
+            </div>-->
                 <!-- <div class="content__project">
                     <section class="main__project">
                         <h3>Project 1</h3>
@@ -134,10 +169,10 @@
                         <a href="/404.html">Budget travel</a>
                     </section>
                 </div> -->
-                <hr>
+                
 
             </section>
-
+            <hr>
             <section class="section__contacts section" id="contacts">
                 <div>
                     <h2>Contact me form</h2>

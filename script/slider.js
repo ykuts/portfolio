@@ -94,7 +94,6 @@ let slider = document.querySelector('.slider'),
         }
       }
 
-      // запрет ухода вправо на последнем слайде
       if (slideIndex === --slides.length) {
         if (posInit > posX1) {
           setTransform(transform, lastTrf);

@@ -26,7 +26,7 @@
     
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // активация слайдера
+     
       new ItcSimpleSlider('.itcss', {
         loop: true,
         autoplay: true,
@@ -278,34 +278,46 @@
     </main>
 
     <footer class="footer">
+        <div class="footer__main">
+        
         <section>
-            <p>You can find me in Social media</p>
-            <a href="https://github.com/ykuts" target="_blank">
+            <div>
+            <a href="https://github.com/ykuts" target="_blank" class="footer__social">
                 <img class="social" src="/img/github.png" alt="GitHub profile Yuliia Kuts">
             </a>
-            <a href="https://linkedin.com/in/yuliiakuts" target="_blank">
+            <a href="https://linkedin.com/in/yuliiakuts" target="_blank" class="footer__social">
                 <img class="social" src="/img/linkedin.png" alt="LinkedIn profile Yuliia Kuts">
             </a>
-            <a href="https://medium.com/@yuliiakuts" target="_blank">
+            <a href="https://medium.com/@yuliiakuts" target="_blank" class="footer__social">
                 <img class="social" src="/img/medium.png" alt="Medium profile Yuliia Kuts">
             </a>
+        </div>
         </section>
-        <section>
-            <p>Or you can book a call</p>
+   
+    
+        <section >
+            <div class="footer__calendly">
+            <p>Feel free to book a call with me</p>
+            
             <!-- Calendly link widget begin -->
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <a href=""
+            
+            <a class="footer__link" href=""
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule
-                a meeting with me</a>
+                a meeting</a>
+            
             <!-- Calendly link widget end -->
-            <hr>
+        </div>
         </section>
+    
         <section>
+            <div>
             &copy; Yuliia K
+        </div>
         </section>
 
-
+    </div>
     </footer>
 
     <div class="progress-bar">

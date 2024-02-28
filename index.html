@@ -11,32 +11,27 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/style-form.css" type="text/css">
     <link rel="stylesheet" href="/css/style-glass-btn.css" type="text/css">
-    <link rel="stylesheet" href="/css/style-slider2.css" type="text/css">
     <link rel="stylesheet" href="/css/simple-adaptive-slider.css">
-    <!-- <link rel="stylesheet" href="/css/css-reset.css" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <!-- link CSS slider -->
 
-    <!-- link JS slider -->
-    <script defer src="script/slider.js"></script>
     <script defer src="script/typing.js"></script>
     <script defer src="script/backtotop.js"></script>
     <script defer src="script/form-validation.js"></script>
     <script defer src="/script/simple-adaptive-slider.js"></script>
-    
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-     
-      new ItcSimpleSlider('.itcss', {
-        loop: true,
-        autoplay: true,
-        interval: 5000,
-        swipe: true
-      });
-    });
-  </script>
 
-<script defer src="/script/lets-connect.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            new ItcSimpleSlider('.itcss', {
+                loop: true,
+                autoplay: true,
+                interval: 5000,
+                swipe: true
+            });
+        });
+    </script>
+
+    <script defer src="/script/lets-connect.js"></script>
 
 </head>
 
@@ -80,25 +75,26 @@
                         <div class="text__about">
                             <p>Welcome to my corner of the digital universe!</p>
                             <p>My passion is writing code and making dreams come true.</p>
-                            <p>With a deep love for creating elegant solutions, I am excited to take on the challenge of 
-                                turning your ideas into functional and beautiful applications. Whether it's composing complex algorithms or 
+                            <p>With a deep love for creating elegant solutions, I am excited to take on the challenge of
+                                turning your ideas into functional and beautiful applications. Whether it's composing
+                                complex algorithms or
                                 designing intuitive user interfaces, I'm dedicated to bringing your ideas to life.</p>
-                            <p>Join me on this journey of innovation and creativity as we 
+                            <p>Join me on this journey of innovation and creativity as we
                                 navigate the ever-changing landscape of technology together.</p>
-                            </p>                       
-                                
+                            </p>
+
                         </div>
                     </div>
                     <div>
-                            <div class="glass-btn glass-btn-red">
-                                <a href="#" class="button__about">More official info (download my CV)</a>
-                            </div>
-                            <div class="glass-btn glass-btn-blue">
-                                <a href="./more-about.html" class="button__about">More interesting info</a>
-                            </div>
-                            <div class="glass-btn glass-btn-green">
-                                <a href="#projects" class="button__about">See my projects below </a>
-                            </div>
+                        <div class="glass-btn glass-btn-red">
+                            <a href="#" class="button__about">More official info (download my CV)</a>
+                        </div>
+                        <div class="glass-btn glass-btn-blue">
+                            <a href="./more-about.html" class="button__about">More interesting info</a>
+                        </div>
+                        <div class="glass-btn glass-btn-green">
+                            <a href="#projects" class="button__about">See my projects below </a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -117,101 +113,49 @@
                             They're not alive yet... but wait a couple months... nobody knows... :)
                         </p>
                     </div>
-                    <!-- <div class="slider">
-                        <div class="slider-list">
-                        <div class="slider-track">
-                            <div class="slide">
-                                <h3>Project 1</h3>
-                                <p>Internet shop "Made by hands with love"</p>
-                                <a href="/404.html">Internet shop</a>
-                            </div>
-                            <div class="slide">
-                                <h3>Project 2</h3>
-                                <p>Platform for Actors and Production agencies</p>
-                                <a href="/404.html">Platform "CinemaGo"</a>
-                            </div>
-                            <div class="slide">
-                                <h3>Project 3</h3>
-                                <p>Project "Financial news"</p>
-                                <a href="/404.html">Financial news</a>
-                            </div>
-                            <div class="slide">
-                                <h3>Project 4</h3>
-                                <p>Project "Budget travel"</p>
-                                <a href="/404.html">Budget travel</a>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="slider-arrows">
-                        <button type="button" class="prev">&larr;</button>
-                        <button type="button" class="next">&rarr;</button>
-                        </div>
-                    </div> -->
+                    
                 </div>
 
 
-                <!-- Разметка слайдера -->
-  <div class="itcss">
-    <div class="itcss__wrapper">
-      <div class="itcss__items">
-        <div class="itcss__item">
-            <div style="height: 250px; background: #3f51b5;">
-                <!-- <img src="/img/projects/business-people-593751_1280.jpg" alt="" class="img__slide"> -->
-            </div>
-        </div>
-        <div class="itcss__item">
-          <div style="height: 250px; background: #607d8b;"></div>
-        </div>
-        <div class="itcss__item">
-          <div style="height: 250px; background: #f44336;"></div>
-        </div>
-        <div class="itcss__item">
-          <div style="height: 250px; background: #4caf50;"></div>
-        </div>
-      </div>
-    </div>
-    <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
-    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
-  </div>
+                <!-- Slides -->
+                <div class="itcss">
+                    <div class="itcss__wrapper">
+                        <div class="itcss__items">
+                            <div class="itcss__item">
+                                <div style="height: 250px; background: #3f51b5;" class="slide">
+                                    <h3>Project 1</h3>
+                                    <p>Internet shop "Made by hands with love"</p>
+                                    <a href="/404.html">Internet shop</a>
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div style="height: 250px; background: #607d8b;" class="slide">
 
+                                    <h3>Project 2</h3>
+                                    <p>Platform for Actors and Production agencies</p>
+                                    <a href="/404.html">Platform "CinemaGo"</a>
 
-           <!-- <div>
-                <h1 class="page-title">Slider example</h1>
-                 <div class="slider-container">
-                    <div class="slider">
-                        <img src="https://i.postimg.cc/nhsTGkLQ/1.png" alt="Белый пушистый кот">
-                        <img src="https://i.postimg.cc/cLVh9nKk/2.png" alt="Рыжий пушистый кот в джинсах">
-                        <img src="https://i.postimg.cc/4NxWmZkP/3.png" alt="Бело-рыжий пушистый кот">
-                        <img src="https://i.postimg.cc/FFZPrzq1/8.png" alt="Золотистый пушистый кот">
-                        <img src="https://i.postimg.cc/jd3Zf9Rb/7.png" alt="Золотистый пушистый кот">
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div style="height: 250px; background: #f44336;" class="slide">
+                                    <h3>Project 3</h3>
+                                    <p>Project "Financial news"</p>
+                                    <a href="/404.html">Financial news</a>
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div style="height: 250px; background: #4caf50;" class="slide">
+                                    <h3>Project 4</h3>
+                                    <p>Project "Budget travel"</p>
+                                    <a href="/404.html">Budget travel</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-                </div> 
-            </div>-->
-                <!-- <div class="content__project">
-                    <section class="main__project">
-                        <h3>Project 1</h3>
-                        <p>Internet shop "Made by hands with love"</p>
-                        <a href="/404.html">Internet shop</a>
-                    </section>
-                    <section class="main__project">
-                        <h3>Project 2</h3>
-                        <p>Platform for Actors and Production agencies</p>
-                        <a href="/404.html">Platform "CinemaGo"</a>
-                    </section>
-                    <section class="main__project">
-                        <h3>Project 3</h3>
-                        <p>Project "Financial news"</p>
-                        <a href="/404.html">Financial news</a>
-                    </section>
-                    <section class="main__project">
-                        <h3>Project 4</h3>
-                        <p>Project "Budget travel"</p>
-                        <a href="/404.html">Budget travel</a>
-                    </section>
-                </div> -->
-                
+                    <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+                    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+                </div>
 
             </section>
             <hr>
@@ -222,50 +166,55 @@
                     <p>Hope it means you would like to contact me :)</p>
                 </div>
                 <div class="section__form">
-                <div class="title__form">
-                    <p class="title__item">Great, let's...</p>
-                    <p class="title__change">...<span id="changeWords"></span></p>
+                    <div class="title__form">
+                        <p class="title__item">Great, let's...</p>
+                        <p class="title__change">...<span id="changeWords"></span></p>
+                    </div>
+                    <div class="form__form">
+                        <form name="MsgForm" id="msgForm" novalidate>
+                            <fieldset class="form__fieldset">
+                                <p>
+                                    <label for="fullname">First Name:</label>
+                                </p>
+                                <p class="input__box">
+                                    <input type="text" class="form__input name" name="name" id="fullname"
+                                        placeholder="Enter your name">
+                                <p class="error__box">
+                                    <span id="nameError" class="error__message">*name is required</span>
+                                </p>
+                                </p>
+                                <p>
+                                    <label for="email">E-mail:</label>
+                                </p>
+                                <p class="input__box">
+                                    <input type="email" class="form__input email" name="email" id="email"
+                                        placeholder="mail@mail.com">
+                                <p class="error__box"><span id="emailError" class="error__message">*email is
+                                        required</span></p>
+                                </p>
+                                <p>
+                                    <label for="message">Your Message:</label>
+                                </p>
+                                <p>
+                                    <textarea class="form__message" name="message" id="message" cols="30" rows="10"
+                                        placeholder="Type your message here"></textarea>
+                                </p>
+                                <br>
+                                <div class="glass-btn glass-btn-blue">
+                                    <a href="#email"><input class="form__btn" type="submit" value="Send"
+                                            name="Submit" /> </a>
+
+                                </div>
+                                <div class="glass-btn glass-btn-red">
+                                    <a href="#email"><input class="form__btn" type="reset" value="Reset" name="Reset" />
+                                    </a>
+
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
-                <div class="form__form">
-                <form name="MsgForm" id="msgForm" novalidate>
-                    <fieldset class="form__fieldset">
-                        <p>
-                            <label for="fullname">First Name:</label>
-                            </p>
-                            <p class="input__box">
-                            <input type="text" class="form__input name" name="name" id="fullname" placeholder="Enter your name">
-                            <p class="error__box">
-                                <span id="nameError" class="error__message">*name is required</span>
-                            </p>
-                        </p>
-                        <p>
-                            <label for="email">E-mail:</label>
-                        </p>
-                        <p class="input__box">
-                            <input type="email" class="form__input email" name="email" id="email" placeholder="mail@mail.com">
-                            <p class="error__box"><span id="emailError" class="error__message">*email is required</span></p>
-                        </p>
-                        <p>
-                            <label for="message">Your Message:</label>
-                        </p>
-                        <p>
-                            <textarea class="form__message" name="message" id="message" cols="30" rows="10"
-                                placeholder="Type your message here"></textarea>
-                        </p>
-                        <br>
-                        <div class="glass-btn glass-btn-blue">
-                            <a href="#email"><input class="form__btn" type="submit" value="Send" name="Submit" /> </a>
-                        
-                        </div>
-                        <div class="glass-btn glass-btn-red">
-                            <a href="#email"><input class="form__btn" type="reset" value="Reset" name="Reset" /> </a>
-                        
-                        </div>
-                       
-                    </fieldset>
-                </form>
-            </div>
-            </div>
 
 
 
@@ -279,45 +228,46 @@
 
     <footer class="footer">
         <div class="footer__main">
-        
-        <section>
-            <div>
-            <a href="https://github.com/ykuts" target="_blank" class="footer__social">
-                <img class="social" src="/img/github.png" alt="GitHub profile Yuliia Kuts">
-            </a>
-            <a href="https://linkedin.com/in/yuliiakuts" target="_blank" class="footer__social">
-                <img class="social" src="/img/linkedin.png" alt="LinkedIn profile Yuliia Kuts">
-            </a>
-            <a href="https://medium.com/@yuliiakuts" target="_blank" class="footer__social">
-                <img class="social" src="/img/medium.png" alt="Medium profile Yuliia Kuts">
-            </a>
-        </div>
-        </section>
-   
-    
-        <section >
-            <div class="footer__calendly">
-            <p>Feel free to book a call with me</p>
-            
-            <!-- Calendly link widget begin -->
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            
-            <a class="footer__link" href=""
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule
-                a meeting</a>
-            
-            <!-- Calendly link widget end -->
-        </div>
-        </section>
-    
-        <section>
-            <div>
-            &copy; Yuliia K
-        </div>
-        </section>
 
-    </div>
+            <section>
+                <div>
+                    <a href="https://github.com/ykuts" target="_blank" class="footer__social">
+                        <img class="social" src="/img/github.png" alt="GitHub profile Yuliia Kuts">
+                    </a>
+                    <a href="https://linkedin.com/in/yuliiakuts" target="_blank" class="footer__social">
+                        <img class="social" src="/img/linkedin.png" alt="LinkedIn profile Yuliia Kuts">
+                    </a>
+                    <a href="https://medium.com/@yuliiakuts" target="_blank" class="footer__social">
+                        <img class="social" src="/img/medium.png" alt="Medium profile Yuliia Kuts">
+                    </a>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="footer__calendly">
+                    <p>Feel free to book a call with me</p>
+
+                    <!-- Calendly link widget begin -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                        async></script>
+
+                    <a class="footer__link" href=""
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule
+                        a meeting</a>
+
+                    <!-- Calendly link widget end -->
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    &copy; Yuliia K
+                </div>
+            </section>
+
+        </div>
     </footer>
 
     <div class="progress-bar">

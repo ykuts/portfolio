@@ -8,7 +8,7 @@
  */
 
 class ItcSimpleSlider {
-  // базовые классы и селекторы
+
   static PREFIX = 'itcss';
   static EL_WRAPPER = `${ItcSimpleSlider.PREFIX}__wrapper`;
   static EL_ITEM = `${ItcSimpleSlider.PREFIX}__item`;
@@ -18,11 +18,11 @@ class ItcSimpleSlider {
   static EL_INDICATOR_ACTIVE = `${ItcSimpleSlider.PREFIX}__indicator_active`;
   static EL_INDICATORS = `${ItcSimpleSlider.PREFIX}__indicators`;
   static EL_CONTROL = `${ItcSimpleSlider.PREFIX}__btn`;
-  // порог для переключения слайда (20%)
+
   static SWIPE_THRESHOLD = 20;
-  // класс для отключения transition
+
   static TRANSITION_NONE = 'transition-none';
-  // Определите, поддерживает ли текущий клиент пассивные события
+
   static checkSupportPassiveEvents() {
     let passiveSupported = false;
     try {
@@ -45,7 +45,6 @@ class ItcSimpleSlider {
     this._elItems = this._el.querySelector(`.${this.constructor.EL_ITEMS}`);
     this._elListItem = this._el.querySelectorAll(`.${this.constructor.EL_ITEM}`);
 
-    // экстремальные значения слайдов
     this._exOrderMin = 0;
     this._exOrderMax = 0;
     this._exItemMin = null;
@@ -57,9 +56,8 @@ class ItcSimpleSlider {
 
     this._isBalancing = false;
 
-    // направление смены слайдов (по умолчанию)
     this._direction = 'next';
-    // текущее значение трансформации
+
     this._transform = 0;
 
     this._clientRect = this._elWrapper.getBoundingClientRect();
@@ -69,10 +67,10 @@ class ItcSimpleSlider {
     const styleElItems = window.getComputedStyle(this._elItems);
     this._delay = Math.round(parseFloat(styleElItems.transitionDuration) * 50);
 
-    // swipe параметры
+
     this._hasSwipeState = false;
     this._swipeStartPosX = 0;
-    // id таймера
+
     this._intervalId = null;
     this._config = {
       loop: true,
@@ -83,7 +81,7 @@ class ItcSimpleSlider {
       ...config
     };
     this._elItems.dataset.translate = '0';
-    // добавляем к слайдам data-атрибуты
+
     this._elListItem.forEach((item, index) => {
       item.dataset.order = `${index}`;
       item.dataset.index = `${index}`;
@@ -91,7 +89,6 @@ class ItcSimpleSlider {
       this._states.push(index === 0 ? 1 : 0);
     });
 
-    // перемещаем последний слайд перед первым
     if (this._config.loop) {
       const count = this._elListItem.length - 1;
       const translate = -this._elListItem.length;
@@ -100,16 +97,11 @@ class ItcSimpleSlider {
       const valueX = translate * this._clientRect.width;
       this._elListItem[count].style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
     }
-    // добавляем индикаторы к слайдеру
     this._addIndicators();
     this._elListIndicator = document.querySelectorAll(`.${this.constructor.EL_INDICATOR}`);
-    // обновляем экстремальные значения переменных
     this._updateExProperties();
-    // помечаем активные элементы
     this._changeActiveItems();
-    // назначаем обработчики
     this._addEventListener();
-    // запускаем автоматическую смену слайдов
     this._autoplay();
   }
 
@@ -129,7 +121,6 @@ class ItcSimpleSlider {
     this._el.dispatchEvent(new CustomEvent('change.itc.slider', { bubbles: true }));
   }
 
-  // смена слайдов
   _move() {
     this._elItems.classList.remove(this.constructor.TRANSITION_NONE);
     if (this._direction === 'none') {
@@ -162,7 +153,6 @@ class ItcSimpleSlider {
     }
   }
 
-  // функция для перемещения к слайду по индексу
   _moveTo(index) {
     const currIndex = this._states.indexOf(1);
     this._direction = index > currIndex ? 'next' : 'prev';
@@ -171,7 +161,6 @@ class ItcSimpleSlider {
     }
   }
 
-  // метод для автоматической смены слайдов
   _autoplay(action) {
     if (!this._config.autoplay) {
       return;
@@ -189,7 +178,6 @@ class ItcSimpleSlider {
     }
   }
 
-  // добавление индикаторов
   _addIndicators() {
     const el = this._el.querySelector(`.${this.constructor.EL_INDICATORS}`);
     if (el || !this._config.indicators) {
@@ -203,7 +191,6 @@ class ItcSimpleSlider {
     this._el.insertAdjacentHTML('beforeend', html);
   }
 
-  // refresh extreme values
   _updateExProperties() {
     const els = Object.values(this._elListItem).map((el) => el);
     const orders = els.map((item) => Number(item.dataset.order));
@@ -245,7 +232,6 @@ class ItcSimpleSlider {
     }, this._delay);
   }
 
-  // adding listeners
   _addEventListener() {
     const onSwipeStart = (e) => {
       this._autoplay('stop');
@@ -316,7 +302,6 @@ class ItcSimpleSlider {
       this._hasSwipeState = false;
       this._autoplay();
     };
-    // click
     this._el.addEventListener('click', (e) => {
       const $target = e.target;
       this._autoplay('stop');
@@ -332,20 +317,17 @@ class ItcSimpleSlider {
       this._autoplay();
     });
 
-    // transitionstart and transitionend
     if (this._config.loop) {
       this._elItems.addEventListener('transitionend', () => {
         this._isBalancing = false;
       });
     }
-    // mouseenter and mouseleave
     this._el.addEventListener('mouseenter', () => {
       this._autoplay('stop');
     });
     this._el.addEventListener('mouseleave', () => {
       this._autoplay();
     });
-    // swipe
     if (this._config.swipe) {
       const options = this.constructor.checkSupportPassiveEvents() ? { passive: false } : false;
       this._el.addEventListener('touchstart', onSwipeStart, options);
@@ -359,7 +341,6 @@ class ItcSimpleSlider {
     this._el.addEventListener('dragstart', (e) => {
       e.preventDefault();
     });
-    // при изменении активности вкладки
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'visible' && this._config.loop) {
         this._autoplay();
@@ -395,14 +376,12 @@ class ItcSimpleSlider {
       this._states = [];
       this._elItems.dataset.translate = '0';
       this._elListItem = this._el.querySelectorAll(`.${this.constructor.EL_ITEM}`);
-      // добавляем к слайдам data-атрибуты
       this._elListItem.forEach((item, index) => {
         item.dataset.order = `${index}`;
         item.dataset.index = `${index}`;
         item.dataset.translate = '0';
         this._states.push(index === 0 ? 1 : 0);
       });
-      // перемещаем последний слайд перед первым
       if (this._config.loop) {
         const count = this._elListItem.length - 1;
         const translate = -this._elListItem.length;
@@ -412,28 +391,22 @@ class ItcSimpleSlider {
         this._elListItem[count].style.transform = `translate3D(${valueX}px, 0px, 0.1px)`;
       }
       this._el.querySelector(`.${this.constructor.EL_INDICATORS}`).remove();
-      // добавляем индикаторы к слайдеру
       this._addIndicators();
       this._elListIndicator = document.querySelectorAll(`.${this.constructor.EL_INDICATOR}`);
-      // обновляем экстремальные значения переменных
       this._updateExProperties();
-      // помечаем активные элементы
       this._changeActiveItems();
     }
     this._autoplay();
   }
 
-  // перейти к следующему слайду
   next() {
     this._direction = 'next';
     this._move();
   }
-  // перейти к предыдущему слайду
   prev() {
     this._direction = 'prev';
     this._move();
   }
-  // управление автоматической сменой слайдов
   autoplay() {
     this._autoplay('stop');
   }

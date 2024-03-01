@@ -1,7 +1,7 @@
   .form__input{
     -webkit-appearance: none;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border: 1px solid #333;
     border-radius: 10px;
     margin: 0; 
@@ -41,6 +41,11 @@
   input:focus.invalid {
     outline: none;
   }
+
+  .form__label {
+    margin: 5px;
+    font-weight: 500;
+  }
   
   /* Style error message */
   .error__message {
@@ -68,13 +73,18 @@
   }
 
   .form__message {
-    width: 100%;
-    height: 100px;
+    width: -webkit-fill-available;
+    height: 60px;
     border: 1px solid;
     border-radius: 10px;
     font-size: 90%;
     font-family: inherit;
     padding: 10px;
+  }
+
+  .message__box {
+    margin: 0px;
+    width: 100%;
   }
 
   .error__box {

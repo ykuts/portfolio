@@ -26,15 +26,28 @@ html,body {
     font-size: 2em;
   }
 
+  .divider__hr{
+    border: 2px solid rgb(165, 164, 164);
+  border-bottom-width: 0;
+  border-radius: 5px;
+  width: 70%;
+  }
+
 .header {
   width: 100%;
-  display: flex;
   position: fixed;
   z-index: 2;
-  align-items: center;
-  justify-content: space-between;
   top: 0;
   background-color: #f4f4f4;
+  height: 140px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+
 }
 
 .header__nav {
@@ -78,34 +91,71 @@ html,body {
   padding-top: 150px;
 }
 
+.main__section{
+  height: 75vh;
+}
+
 
 .main__header {
   margin: 15px;
-  padding: 10px;
+  padding: 50px 10px 10px 10px;
   text-align: center;
 }
 
 .main__article {
   display: flex;
-  justify-content: center;
-  height: 100vh; 
+  justify-content: center; 
   margin: 15px;
 }
 
-.section {
+.header__logo a {
+  position: relative;
+  top:0;
+}
 
-  scroll-margin-top: 160px;
+.section {
+  scroll-margin-top: 150px;
+}
+
+.section__text{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .section__about {
+  margin: 0px 20px;
+}
+  
+
+.section__content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
-  height: 100vh;
+  padding: 0px 50px;
 }
 
 
+.section__header {
+  border-width: 2px 0 0 0;
+  border-color: rgb(165, 164, 164);
+  border-style: solid;
+  width: 70%;
+  padding: 40px
+}
+
+.section__header p {
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.section__h2{
+  text-align: center;
+  font-size: 55px;
+}
 
 .text__about {
   font-size: 18px;
@@ -114,6 +164,13 @@ html,body {
     color: #696871;
     margin-bottom: 50px;
     padding-right: 25px;
+    width: 500px;
+    text-align: justify;
+}
+
+.img__about {
+  width: 400px;
+  border-radius: 10px;
 }
 
 .section__projects {
@@ -131,8 +188,8 @@ html,body {
 .section__form{
   display: flex;
   justify-content: space-between;
+  width: 100%;
   
-  margin: 20px;
 }
 
 .title__form {
@@ -206,10 +263,10 @@ input[type="reset"] {
     height: 40px;
 }
 
-img {
+/* img {
     height: 300px;
     border-radius: 10px;
-}
+} */
 
 .my__photo {
     margin: 10px;
@@ -314,4 +371,5 @@ width: 100%;
     left: 0;
   }
 
+  
 

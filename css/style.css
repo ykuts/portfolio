@@ -83,7 +83,7 @@ html,body {
 }
 
 .nav__logo {
-  height: 150px;
+  height: 140px;
   margin-left: 20px;
 }
 
@@ -143,7 +143,7 @@ html,body {
   border-color: rgb(165, 164, 164);
   border-style: solid;
   width: 70%;
-  padding: 40px
+  padding: 20px
 }
 
 .section__header p {
@@ -176,7 +176,8 @@ html,body {
 .section__projects {
   
   margin: 20px;
-  height: 100vh;
+  margin-bottom: 50px;
+  
 }
 
 .section__contacts {
@@ -274,7 +275,8 @@ input[type="reset"] {
 }
 
 .slide {
- 
+ height: 400px;
+ width: 800px;
   margin-top: 15px;
   flex-direction: column;
   display: flex;
@@ -282,6 +284,44 @@ input[type="reset"] {
   justify-content: center;
   
 }
+
+.project__1 {
+  background-image: url(/img/projects/project-1-v4.jpg);
+  } 
+
+.project__2 {
+background-image: url(/img/projects/project-2-v4.jpg)
+} 
+
+.project__3 {
+  background-image: url(/img/projects/project-3-v4.jpg);
+  } 
+
+.project__4 {
+  background-image: url(/img/projects/project-4-v1.jpg);
+  } 
+
+  .project__desctiption {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #141c389f;
+    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+  .project__desctiption a {
+    text-decoration: none;
+    text-shadow: #3e3d44;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 1px #333, -1px -1px 0 #0ff;
+  }
 
 
 footer {

@@ -18,6 +18,8 @@
     <script defer src="script/backtotop.js"></script>
     <script defer src="script/form-validation.js"></script>
     <script defer src="/script/simple-adaptive-slider.js"></script>
+    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -38,22 +40,24 @@
 <body>
     <header>
         <div class="header">
+            <div class="header__content">
             <div class="header__logo">
                 <a href="/index.html"><img class="nav__logo" src="img/YK.png" alt="logo"></a>
             </div>
             <div class="header__nav">
                 <ul class="nav__ul">
-                    <li class="nav__li"><a class="nav__link" href="#about">The page about me</a></li>
-                    <li class="nav__li"><a class="nav__link" href="#projects">My projects</a></li>
-                    <li class="nav__li"><a class="nav__link" href="#contacts">Contact me</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#about">About me</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#projects">Projects</a></li>
+                    <li class="nav__li"><a class="nav__link" href="#contacts">Contacts</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
         </div>
     </header>
 
     <main id="main">
         <div class="main__content">
-
             <section class="main__section section">
                 <div>
                     <h1 class="main__header">Welcome!</h1>
@@ -64,28 +68,41 @@
                         </h2>
                     </article>
                 </div>
-            </section>
-            <hr>
-            <section class="section__about section" id="about">
-                <div>
-                    <div>
-                        <h2>About me</h2>
-                        <h3>Nice to meet you -</h3>
-                        <p>My name is Yuliia...</p>
-                        <div class="text__about">
-                            <p>Welcome to my corner of the digital universe!</p>
-                            <p>My passion is writing code and making dreams come true.</p>
-                            <p>With a deep love for creating elegant solutions, I am excited to take on the challenge of
-                                turning your ideas into functional and beautiful applications. Whether it's composing
-                                complex algorithms or
-                                designing intuitive user interfaces, I'm dedicated to bringing your ideas to life.</p>
-                            <p>Join me on this journey of innovation and creativity as we
-                                navigate the ever-changing landscape of technology together.</p>
-                            </p>
 
+            </section>
+
+            <section class="section__about section" id="about">
+                <div class="section__content">
+                    <div class="section__header">
+                        <h2 class="section__h2">About me</h2>
+                    </div>
+
+                    <div class="section__text">
+                        <div>
+                            <h3>Nice to meet you -</h3>
+                            <p>My name is Yuliia...</p>
+                            <div class="text__about">
+                                <p>Welcome to my corner of the digital universe!</p>
+                                <p>My passion is writing code and making dreams come true.</p>
+                                <p>With a deep love for creating elegant solutions, I am excited to take on the
+                                    challenge of
+                                    turning your ideas into functional and beautiful applications. Whether it's
+                                    composing
+                                    complex algorithms or
+                                    designing intuitive user interfaces, I'm dedicated to bringing your ideas to life.
+                                </p>
+                                <p>Join me on this journey of innovation and creativity as we
+                                    navigate the ever-changing landscape of technology together.</p>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/yuliia.jpg" alt="my picture" class="img__about">
                         </div>
                     </div>
-                    <div>
+
+                    <div class="section__buttons">
                         <div class="glass-btn glass-btn-red">
                             <a href="#" class="button__about">More official info (download my CV)</a>
                         </div>
@@ -96,132 +113,123 @@
                             <a href="#projects" class="button__about">See my projects below </a>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./img/yuliia.jpg" alt="my picture" class="img__about">
-                </div>
 
+                </div>
             </section>
 
-            <hr>
             <section class="section__projects section" id="projects">
                 <div>
-                    <div>
-                        <h2>Here are my projects:</h2>
-                        <p>here are my future projects</p>
+                <div class="section__content">
+                    <div class="section__header">
+                        <h2 class="section__h2">My projects</h2>
                         <p>
-                            They're not alive yet... but wait a couple months... nobody knows... :)
+                            *They're not alive yet... but wait a couple of months... nobody knows... :)
                         </p>
                     </div>
-                    
-                </div>
 
-
-                <!-- Slides -->
-                <div class="itcss">
-                    <div class="itcss__wrapper">
-                        <div class="itcss__items">
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #3f51b5;" class="slide">
-                                    <h3>Project 1</h3>
-                                    <p>Internet shop "Made by hands with love"</p>
-                                    <a href="/404.html">Internet shop</a>
+                    <!-- Slides -->
+                    <div class="itcss">
+                        <div class="itcss__wrapper">
+                            <div class="itcss__items">
+                                <div class="itcss__item">
+                                    <div class="project__1 slide">
+                                        <div class="project__desctiption">
+                                        <a href="/404.html">Internet shop "Made by hands with love"</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #607d8b;" class="slide">
-
-                                    <h3>Project 2</h3>
-                                    <p>Platform for Actors and Production agencies</p>
-                                    <a href="/404.html">Platform "CinemaGo"</a>
-
+                                <div class="itcss__item">
+                                    <div class="project__2 slide">
+                                        <div class="project__desctiption">
+                                        <a href="/404.html">Platform for Actors and Production agencies "CinemaGo"</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #f44336;" class="slide">
-                                    <h3>Project 3</h3>
-                                    <p>Project "Financial news"</p>
-                                    <a href="/404.html">Financial news</a>
+                                <div class="itcss__item">
+                                    <div class="project__3 slide">
+                                        <div class="project__desctiption">
+                                        
+                                        <a href="/404.html">Platform "Financial news"</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="itcss__item">
-                                <div style="height: 250px; background: #4caf50;" class="slide">
-                                    <h3>Project 4</h3>
-                                    <p>Project "Budget travel"</p>
-                                    <a href="/404.html">Budget travel</a>
+                                <div class="itcss__item">
+                                    <div class="project__4 slide">
+                                        <div class="project__desctiption">
+                                        <a href="/404.html">Platform "Budget travel"</a>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+                        <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
                     </div>
-                    <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
-                    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
                 </div>
-
+            </div>
             </section>
-            <hr>
+
             <section class="section__contacts section" id="contacts">
-                <div>
-                    <h2>Contact me form</h2>
-                    <h3>Glad to see you on this page</h3>
-                    <p>Hope it means you would like to contact me :)</p>
-                </div>
-                <div class="section__form">
-                    <div class="title__form">
-                        <p class="title__item">Great, let's...</p>
-                        <p class="title__change">...<span id="changeWords"></span></p>
+                <div class="section__content">
+                    <div class="section__header">
+                        <h2 class="section__h2">Want to know more?</h2>
                     </div>
-                    <div class="form__form">
-                        <form name="MsgForm" id="msgForm" novalidate>
-                            <fieldset class="form__fieldset">
-                                <p>
-                                    <label for="fullname">First Name:</label>
-                                </p>
-                                <p class="input__box">
-                                    <input type="text" class="form__input name" name="name" id="fullname"
-                                        placeholder="Enter your name">
-                                <p class="error__box">
-                                    <span id="nameError" class="error__message">*name is required</span>
-                                </p>
-                                </p>
-                                <p>
-                                    <label for="email">E-mail:</label>
-                                </p>
-                                <p class="input__box">
-                                    <input type="email" class="form__input email" name="email" id="email"
-                                        placeholder="mail@mail.com">
-                                <p class="error__box"><span id="emailError" class="error__message">*email is
-                                        required</span></p>
-                                </p>
-                                <p>
-                                    <label for="message">Your Message:</label>
-                                </p>
-                                <p>
-                                    <textarea class="form__message" name="message" id="message" cols="30" rows="10"
-                                        placeholder="Type your message here"></textarea>
-                                </p>
-                                <br>
-                                <div class="glass-btn glass-btn-blue">
-                                    <a href="#email"><input class="form__btn" type="submit" value="Send"
-                                            name="Submit" /> </a>
 
-                                </div>
-                                <div class="glass-btn glass-btn-red">
-                                    <a href="#email"><input class="form__btn" type="reset" value="Reset" name="Reset" />
-                                    </a>
+                    <div class="section__form">
+                        <div class="title__form">
+                            <p class="title__item">Great, let's...</p>
+                            <p class="title__change">...<span id="changeWords"></span></p>
+                        </div>
+                        <div class="form__form">
+                            <form name="MsgForm" id="msgForm" novalidate>
+                                <fieldset class="form__fieldset">
+                                    <p class="form__label">
+                                        <label for="fullname">First Name:</label>
+                                    </p>
+                                    <p class="input__box">
+                                        <input type="text" class="form__input name" name="name" id="fullname"
+                                            placeholder="Enter your name">
+                                    <p class="error__box">
+                                        <span id="nameError" class="error__message">*name is required</span>
+                                    </p>
+                                    </p>
+                                    <p class="form__label">
+                                        <label for="email">E-mail:</label>
+                                    </p>
+                                    <p class="input__box">
+                                        <input type="email" class="form__input email" name="email" id="email"
+                                            placeholder="mail@mail.com">
+                                    <p class="error__box"><span id="emailError" class="error__message">*email is
+                                            required</span></p>
+                                    </p>
+                                    <p class="form__label">
+                                        <label for="message">Your Message:</label>
+                                    </p>
+                                    <p class="message__box">
+                                        <textarea class="form__message" name="message" id="message" cols="30" rows="10"
+                                            placeholder="Type your message here"></textarea>
+                                    </p>
+                                    <br>
+                                    <div class="glass-btn glass-btn-blue">
+                                        <a href="#email"><input class="form__btn" type="submit" value="Send"
+                                                name="Submit" /> </a>
 
-                                </div>
+                                    </div>
+                                    <div class="glass-btn glass-btn-red">
+                                        <a href="#email"><input class="form__btn" type="reset" value="Reset"
+                                                name="Reset" />
+                                        </a>
 
-                            </fieldset>
-                        </form>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
+
+
                 </div>
-
-
-
             </section>
-
-
-
 
         </div>
     </main>

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Yuliia</title>
     <link href="/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script defer src="script/typing.js"></script>
+    <script defer src="script/backtotop.js"></script>
+    <script defer src="script/form-validation.js"></script>
+    <script defer src="/script/lets-connect.js"></script>
 
 <!-- Custom styles for this template -->
 <link href="carousel.css" rel="stylesheet">
@@ -66,7 +70,7 @@ align-center" id="main-nav">
 
     <div style="height: 75vh;">
     <div class="container-fluid  mx-auto p-5 h-100 text-center bg-secondary bg-gradient text-dark 
-    d-flex align-items-center flex-column justify-content-center sm-12 lg-12">
+    d-flex align-items-center flex-column justify-content-center sm-12 lg-12" id="welcome">
         
         <h1>Welcome!</h1>
         <h2>
@@ -111,13 +115,13 @@ align-center" id="main-nav">
         </div>
         <div class="row justify-content-center text-center p-5">
             <div class="col">
-                <button type="button" class="btn btn-primary">My CV</button>
+                <button type="button" class="btn btn-info">My CV</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-success">More info</button>
+                <button type="button" class="btn btn-danger">More info</button>
             </div>
             <div class="col d-none d-md-block">
-                <button type="button" class="btn btn-danger">Projects</button>
+                <button type="button" class="btn btn-success">Projects</button>
             </div>
         </div>
     </div>
@@ -143,7 +147,7 @@ align-center" id="main-nav">
                 <img src="/img/project-1-v4.jpg" class="d-block w-100" alt="My project">
                 <div class="container">
                   <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
-                    <h1>Made by hands with love</h1>
+                    <h3>Made by hands with love</h3>
                     <p class="d-none d-md-block">Internet shop</p>
                     <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
                   </div>
@@ -153,7 +157,7 @@ align-center" id="main-nav">
                 <img src="/img/project-2-v4.jpg" class="d-block w-100" alt="My project">
                 <div class="container">
                   <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
-                    <h1>Cinama GO</h1>
+                    <h3>Cinama GO</h3>
                     <p>Platform for Actors and Production agencies</p>
                     <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
                   </div>
@@ -163,7 +167,7 @@ align-center" id="main-nav">
                 <img src="/img/project-3-v4.jpg" class="d-block w-100" alt="My project">
                 <div class="container">
                   <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
-                    <h1>Financial news</h1>
+                    <h3>Financial news</h3>
                     <p>Financial platform</p>
                     <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
                   </div>
@@ -173,7 +177,7 @@ align-center" id="main-nav">
                 <img src="/img/project-4-v1.jpg" class="d-block w-100" alt="My project">
                 <div class="container">
                   <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
-                    <h1>Around the World</h1>
+                    <h3>Around the World</h3>
                     <p>A platform about budget travelling</p>
                     <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
                   </div>
@@ -202,11 +206,11 @@ align-center" id="main-nav">
     <div class="container-fluid p-5" id="contacts">
         <div class="row justify-content-center text-center p-5">
             <div class="col">
-                <p class="h2">Want to know more?</p>
+                <h2>Want to know more?</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 p-5">
                 <div class="title__form">
                     <p class="h1">Great, let's...</p>
                     <p class="h3">...<span id="changeWords"></span></p>
@@ -216,21 +220,21 @@ align-center" id="main-nav">
                 <form>
                     <div class="mb-3">
                         <label for="inputName" class="form-label">Name</label>
-                        <input type="name" class="form-control" id="inputEmail1" aria-describedby="nameError">
+                        <input type="name" class="form-control" id="fullname" aria-describedby="nameError">
                         <div id="nameError" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailError" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-primary">Reset</button>
+                    <button type="submit" class="btn btn-danger"">Submit</button>
+                    <button type="reset" class="btn btn-info">Reset</button>
                 </form>
             </div>
         </div>
@@ -242,14 +246,14 @@ align-center" id="main-nav">
         <div class="row">            
             <div class="col">
                 <div>
-                <a href="https://github.com/ykuts" target="_blank" class="footer__social">
+                <a href="https://github.com/ykuts" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
                     <i class="bi bi-github" style="font-size: 2rem; color: rgb(8, 28, 67);"></i>
                 </a>
                 
-                <a href="https://linkedin.com/in/yuliiakuts" target="_blank" class="footer__social">
+                <a href="https://linkedin.com/in/yuliiakuts" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
                     <i class="bi bi-linkedin" style="font-size: 2rem; color: rgb(132, 7, 7);"></i>
                 </a>
-                <a href="https://medium.com/@yuliiakuts" target="_blank" class="footer__social">
+                <a href="https://medium.com/@yuliiakuts" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
                     <i class="bi bi-medium" style="font-size: 2rem; color: rgb(4, 67, 32);"></i>
                 </a>
             </div>
@@ -265,7 +269,7 @@ align-center" id="main-nav">
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
                     async></script>
 
-                <a class="footer__link" href=""
+                <a class="link-opacity-100 link-opacity-100-hover" href=""
                     onclick="Calendly.initPopupWidget({url:'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule a meeting</a>
 
                 <!-- Calendly link widget end -->
@@ -275,6 +279,16 @@ align-center" id="main-nav">
             </div>
         </div>
     </div>
+
+
+    <div class="progress-bar">
+      <button class="back-to-top hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+          </svg>
+      </button>
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

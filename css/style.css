@@ -94,6 +94,10 @@ body {
     border: dotted 5px red;
 }
 
+.section {
+    scroll-margin-top: 100gitpx;
+  }
+
 
 footer {
     display: flex;

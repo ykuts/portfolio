@@ -2,6 +2,301 @@
 <html lang="en">
 
 <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Yuliia</title>
+    <link href="/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="script/typing.js"></script>
+    <script defer src="script/backtotop.js"></script>
+    <script defer src="script/form-validation.js"></script>
+    <script defer src="/script/lets-connect.js"></script>
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+        <div class="container-xxl">
+        <a href="#" class="navbar-brand">
+            <img src="/img/YK.png" alt="My logo" width="140" height="140">
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+<!-- navbar links -->
+
+<div class="collapse navbar-collapse justify-content-end 
+align-center" id="main-nav">
+    <ul class="navbar-nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+</div>
+        </div>
+    </nav>
+
+
+    <div style="height: 75vh;">
+    <div class="container-fluid  mx-auto p-5 h-100 text-center bg-secondary bg-gradient text-dark 
+    d-flex align-items-center flex-column justify-content-center sm-12 lg-12" id="welcome">
+        
+        <h1>Welcome!</h1>
+        <h2>
+            <span id="helloWorld">
+            </span>
+        </h2>
+      </div>
+    </div>
+
+
+    <!-- About me -->
+
+    <div class="container-fluid mx-auto p-5 section" id="about">
+        <div class="row justify-content-center text-center p-5">
+            <div class="col">
+                <h2>About me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 order-sm-1 order-2 col-lg-7 order-lg-1">
+                <h3>Nice to meet you -</h3>
+                            <p>My name is Yuliia...</p>
+                            <div>
+                                <p>Welcome to my corner of the digital universe!</p>
+                                <p>My passion is writing code and making dreams come true.</p>
+                                <p>With a deep love for creating elegant solutions, I am excited to take on the
+                                    challenge of
+                                    turning your ideas into functional and beautiful applications. Whether it's
+                                    composing
+                                    complex algorithms or
+                                    designing intuitive user interfaces, I'm dedicated to bringing your ideas to life.
+                                </p>
+                                <p>Join me on this journey of innovation and creativity as we
+                                    navigate the ever-changing landscape of technology together.</p>
+                                </p>
+
+                            </div>
+            </div>
+            <div class="col-sm-6 order-sm-2 order-1 col-lg-5 order-lg-2">
+                <img src="/img/yuliia.jpg" alt="my picture" class="img-fluid rounded mx-auto d-block">
+            </div>
+        </div>
+        <div class="row justify-content-center text-center p-5">
+            <div class="col">
+                <button type="button" class="btn btn-info">My CV</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger">More info</button>
+            </div>
+            <div class="col d-none d-md-block">
+                <button type="button" class="btn btn-success">Projects</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="container-fluid p-5 section" id="projects">
+        <div class="row justify-content-center text-center p-5">
+            <div class="col">
+                <h2>My projects</h2>
+            </div>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/project-1-v4.jpg" class="d-block w-100" alt="My project">
+                <div class="container">
+                  <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
+                    <h3>Made by hands with love</h3>
+                    <p class="d-none d-md-block">Internet shop</p>
+                    <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/project-2-v4.jpg" class="d-block w-100" alt="My project">
+                <div class="container">
+                  <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
+                    <h3>Cinama GO</h3>
+                    <p>Platform for Actors and Production agencies</p>
+                    <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/project-3-v4.jpg" class="d-block w-100" alt="My project">
+                <div class="container">
+                  <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
+                    <h3>Financial news</h3>
+                    <p>Financial platform</p>
+                    <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/project-4-v1.jpg" class="d-block w-100" alt="My project">
+                <div class="container">
+                  <div class="carousel-caption bg-secondary rounded bg-opacity-75 text-dark">
+                    <h3>Around the World</h3>
+                    <p>A platform about budget travelling</p>
+                    <p><a class="btn btn-md btn-primary" href="/404.html">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+    </div>
+
+
+
+    
+
+    <!-- Contacts -->
+
+    <div class="container-fluid p-5 section" id="contacts">
+        <div class="row justify-content-center text-center p-5">
+            <div class="col">
+                <h2>Want to know more?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-5">
+                <div class="title__form">
+                    <p class="h1">Great, let's...</p>
+                    <p class="h3">...<span id="changeWords"></span></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="fullname" aria-describedby="nameError">
+                        <div id="nameError" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailError" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-danger"">Submit</button>
+                    <button type="reset" class="btn btn-info">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid bg-secondary p-5 justify-content-center text-center">
+        <div class="row">            
+            <div class="col">
+                <div>
+                <a href="https://github.com/ykuts" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <i class="bi bi-github" style="font-size: 2rem; color: rgb(8, 28, 67);"></i>
+                </a>
+                
+                <a href="https://linkedin.com/in/yuliiakuts" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <i class="bi bi-linkedin" style="font-size: 2rem; color: rgb(132, 7, 7);"></i>
+                </a>
+                <a href="https://medium.com/@yuliiakuts" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <i class="bi bi-medium" style="font-size: 2rem; color: rgb(4, 67, 32);"></i>
+                </a>
+            </div>
+            <div class="d-block d-md-none">
+                &copy; Yuliia K
+            </div>
+            </div>
+            <div class="col">
+                <p>Feel free to book a call with me</p>
+
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                    async></script>
+
+                <a class="link-opacity-100 link-opacity-100-hover" href=""
+                    onclick="Calendly.initPopupWidget({url:'https://calendly.com/yuliiakuts/available-for-a-meeting?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">Schedule a meeting</a>
+
+                <!-- Calendly link widget end -->
+            </div>
+            <div class="col d-none d-md-block">
+                &copy; Yuliia K
+            </div>
+        </div>
+    </div>
+
+
+    <div class="progress-bar">
+      <button class="back-to-top hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+          </svg>
+      </button>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
+=======
     <meta charset="UTF-8">
     <meta name="author" content="Yuliia K">
     <meta name="description" content="This my Portfolio project">

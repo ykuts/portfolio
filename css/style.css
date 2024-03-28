@@ -1,15 +1,31 @@
 
 
-html {
+html,body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+  }
+  
+  h1,h2 {
+    font-weight: 500;
+    margin: 0.4em 0;
+  }
+  h1 { font-size: 5em; }
+  h2 {
+    color: #1e1d1d;
+    font-size: 2em;
+  }
+
+/* html {
     font-size: 22px;
 }
 
 body {
-    
+
+    padding: 10%; 
     background-color: #f4f4f4;
     color: rgb(18, 1, 1);
-    margin: 0;
-}
+} */
+
 
 html,body {
     font-family: 'Raleway', sans-serif;
@@ -323,6 +339,10 @@ background-image: url(/img/projects/project-2-v4.jpg)
     text-shadow: 2px 2px 1px #333, -1px -1px 0 #0ff;
   }
 
+.section {
+    scroll-margin-top: 100px;
+  }
+
 
 footer {
     display: flex;
@@ -376,7 +396,17 @@ width: 100%;
     justify-content: center;
 }
 
-.back-to-top {
+
+.rainbow {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .back-to-top {
+
     position: fixed;
     right: 2rem;
     bottom: 2rem;
@@ -409,7 +439,5 @@ width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+
   }
-
-  
-

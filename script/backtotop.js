@@ -7,7 +7,9 @@ const scrollContainer = () => {
 };
 
 const goToTop = () => {
-  let element = document.querySelector(".main__content");
+
+  let element = document.querySelector("#welcome");
+
   element.scrollIntoView({
     behavior: "smooth",
     block: "start",
